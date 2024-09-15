@@ -1,0 +1,16 @@
+"team_name": "ab-eh-me" # Your team name
+"eval_method": ["mcqa", "quantiz"] # mcqa, reward, rag, quantiz
+"task_type": "causal_lm" # causal_lm, seq2seq
+"policy_model_path": "Ali7538/EPFLLaMA_MCQA" # Your path to the final checkpoint
+"reference_model_path": "Ali7538/TinyLlama-1.1B-intermediate-step-1431k-3T_PAD" # The repo id of your pretrained reference model
+"quantized_policy_model_path": "Ali7538/EPFLLaMA_MCQA_Quantized" # Your path to the final quantized checkpoint
+"rag_policy_model_path": "./checkpoints/best_model_rag/" # Your path to the final RAG checkpoint
+"test_data_path": "datasets/MCQA_sft_test.jsonl" # Your path to the test data
+"dpo_model_args": 
+  "torch_dtype" : "auto" # Put any model arguments required to load your DPO model below
+"rag_model_args": # Put any model arguments required to load your rag model below
+  "encoder_model_path": "facebook/bart-large"
+  "retriever_model_path": "./checkpoints/rag_retriever"
+  "document_dir": "./data/documents"
+"quantized_model_args": 
+  "torch_dtype" : "auto" # Put any model arguments required to load your quantized model below
