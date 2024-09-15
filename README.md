@@ -148,8 +148,8 @@ quantized_tokenizer = AutoTokenizer.from_pretrained("Ali7538/EPFLLaMA_MCQA_Quant
 
 ## Contributors
 
+- Elias Hörnberg
 - Ali Bakly
-- Elias Ulf Hörnberg
 - Othmane Sqalli Houssaini
 
 ## Acknowledgments
